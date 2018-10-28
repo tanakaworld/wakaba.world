@@ -1,0 +1,102 @@
+:root {
+  --primary-black: #434343;
+  --primary-green: #50c878;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  color: var(--primary-black);
+}
+
+a {
+  color: var(--primary-green);
+}
+
+/* wrapper */
+.Container {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.Section {
+  max-width: 700px;
+  margin: 48px auto;
+}
+
+.Section__Label,
+.Section__Text {
+  margin-top: 12px;
+}
+
+.Section__Text {
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+/* List */
+ul.List {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul.List li.ListItem {
+  margin-top: 12px;
+}
+
+/* Table */
+table.Table {
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 16px;
+}
+
+td.Table__Column {
+  text-align: left;
+}
+
+td.Table__Column {
+  padding-right: 24px;
+  white-space: nowrap;
+}
+
+td.Table__Column:last-child {
+  padding-right: 0;
+  white-space: normal;
+}
+
+@media only screen and (max-width: 700px) {
+  .Container {
+    width: 90%;
+  }
+
+  .Section {
+    width: 100%;
+  }
+
+  table.Table {
+    border-spacing: 8px;
+  }
+
+  td.Table__Column {
+    white-space: normal;
+  }
+}
