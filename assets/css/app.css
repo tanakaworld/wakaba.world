@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -18,6 +19,23 @@ body {
   padding: 0;
   font-family: 'Rubik', sans-serif;
   color: var(--primary-black);
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -62,41 +80,28 @@ ul.List li.ListItem {
   margin-top: 12px;
 }
 
-/* Table */
-table.Table {
-  table-layout: auto;
-  border-collapse: separate;
-  border-spacing: 16px;
-}
-
-td.Table__Column {
-  text-align: left;
-}
-
-td.Table__Column {
-  padding-right: 24px;
-  white-space: nowrap;
-}
-
-td.Table__Column:last-child {
-  padding-right: 0;
-  white-space: normal;
-}
-
 @media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+
   .Container {
     width: 90%;
   }
 
   .Section {
     width: 100%;
-  }
-
-  table.Table {
-    border-spacing: 8px;
-  }
-
-  td.Table__Column {
-    white-space: normal;
   }
 }
