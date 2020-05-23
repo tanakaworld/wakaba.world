@@ -1,6 +1,6 @@
 <template>
   <section class="Container">
-    <div class="Section">
+    <section class="Section">
       <h1>
         WAKABA YAMAGUCHI
       </h1>
@@ -9,9 +9,9 @@
         class="ProfileIcon"
         src="~/assets/img/profile-icon.jpg"
         alt="wakaba yamaguchi profile icon">
-    </div>
+    </section>
 
-    <div class="Section">
+    <section class="Section">
       <h2>Event Organizer / Curator / Writer / Editor</h2>
 
       <div class="Section__Text">
@@ -19,9 +19,9 @@
         「カッコいい生き様を全力で応援する」をモットーに、ブランドメイクやイベント企画、コミュニティサポートを行っている。
         学生時代に国内にて学芸員資格を取得。その後、アメリカにて美術館とギャラリーでインターン、現地の大学にて学芸員学課程修了後、帰国。ITベンチャーにてテクニカルアドバイザーとして従事後、現在の活動をはじめる。
       </div>
-    </div>
+    </section>
 
-    <div class="Section">
+    <section class="Section">
       <h2>CONTACT</h2>
       <ul class="List">
         <li
@@ -31,17 +31,17 @@
           <a :href="s.url">{{ s.text }}</a>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="Section">
+    <section class="Section">
       <h2>JOB</h2>
       <DateContentTable :contents="jobs"/>
-    </div>
+    </section>
 
-    <div class="Section">
+    <section class="Section">
       <h2>PROJECT</h2>
       <DateContentTable :contents="projects"/>
-    </div>
+    </section>
   </section>
 </template>
 
